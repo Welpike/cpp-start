@@ -22,11 +22,24 @@ int main()
 
     std::cout << number << std::endl;*/
 
-    char c{'A'};
+    /*char c{'A'};
 
     std::string welcome_msg{"Hello, World!"};
 
     std::cout << welcome_msg << std::endl;
+
+    welcome_msg = "Hello, Welpike!";
+
+    std::cout << welcome_msg << std::endl;
+
+    const float PI{3.14};
+
+    auto my_data{333};  // type of my_data = int
+
+    using namespace std::literals;
+
+    auto my_data_str{"Hello"s};  // type of my_data_str = std::string (and not default from C)*/
+
 
     return 0;
 }
