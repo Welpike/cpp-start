@@ -64,7 +64,23 @@ int main()
     // for ignore the chars that are in the 'cache' between 2 inputs
     // std:cin.ignore(255, '\n');
 
-    
+    int code{0};
+
+    std::cout << "Enter a number : ";
+    std::cin >> code;
+
+    switch (code)
+    {
+        case 1:
+            std::cout << "You enter 1" << std::endl;
+            break;
+        case 2:
+        case 3:
+            std::cout << "You enter 2 or 3" << std::endl;
+            break;
+        default:
+            std::cout << "Unknown code" << std::endl;
+    }
 
 
     return 0;
