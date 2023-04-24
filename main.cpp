@@ -64,7 +64,7 @@ int main()
     // for ignore the chars that are in the 'cache' between 2 inputs
     // std:cin.ignore(255, '\n');
 
-    int code{0};
+    /*int code{0};
 
     std::cout << "Enter a number : ";
     std::cin >> code;
@@ -80,6 +80,13 @@ int main()
             break;
         default:
             std::cout << "Unknown code" << std::endl;
+    }*/
+
+    std::string sentence = "Hello, world! how are you?";
+
+    for(const auto i : sentence)  // for each i from sentence
+    {
+        std::cout << i << "\n";
     }
 
 
