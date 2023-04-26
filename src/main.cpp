@@ -1,7 +1,13 @@
 #include <iostream>
 #include <string>
 
+#include "includes/utils.hpp"
+
 // tutorial (in french) : https://www.youtube.com/playlist?list=PLrSOXFDHBtfFKOzlm5iCBeXDTLxXdmxpx
+
+//
+// compilation with many files : g++ -std=c++20 -Wall -Wextra *.cpp -o exec_name
+//
 
 
 /*void sayHello(std::string name)
@@ -139,6 +145,8 @@ int main()
     function2();
 
     std::cout << n << std::endl;*/
+
+    helloWorld();  // from utils.cpp
 
 
     return 0;
