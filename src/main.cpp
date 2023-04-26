@@ -31,6 +31,24 @@ void createPlayer(std::string username, int level)
     std::cout << "Player created : " << username << " / lvl: " << level << std::endl;
 }*/
 
+// enum NaturalElement  // you can update the values here (enum Enum : <type>)
+// {
+//     earth,  // 0
+//     air,    // 1
+//     fire,   // 2
+//     water   // 3
+// };
+
+// enum class NaturalElementClass
+// {
+//     earth,  // 0
+//     air,    // 1
+//     fire,   // 2
+//     water   // 3
+// };
+
+enum class smallint : int {};
+
 int main()
 {
     //std::cout << "Hello, world!" << std::endl;
@@ -167,7 +185,7 @@ int main()
 
     //exceptions
 
-    try{
+    /*try{
         throw std::invalid_argument("Raise Error");
     }
     catch(const std::invalid_argument& err)  //generic exception catcher before generics
@@ -177,7 +195,12 @@ int main()
     catch(const std::exception& err)
     {
         std::cout << "An error occured." << std::endl;
-    }
+    }*/
+
+    //NaturalElement ne{water};
+    /*NaturalElementClass ne{NaturalElementClass::water};
+
+    std::cout << static_cast<int>(ne) << std::endl;*/
 
     return 0;
 }
