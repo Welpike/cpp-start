@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
+//#include <fstream>
 
-#include <cassert>
+//#include <cassert>
 
 #include "includes/utils.hpp"
 
@@ -201,6 +202,31 @@ int main()
     /*NaturalElementClass ne{NaturalElementClass::water};
 
     std::cout << static_cast<int>(ne) << std::endl;*/
+
+    // input
+    /*std::ifstream f{"animals.txt"};  // std::ios::in
+
+    std::string name{""};
+
+    std::cout << f.is_open() << std::endl;
+
+    if(f.is_open())
+    {
+        f >> name;
+        std::cout << name << "\n";
+        
+        f >> name;
+        std::cout << name << std::endl;
+    }*/
+
+    // output
+    /*std::ofstream f{"data.txt"};  // std::ios::out
+
+    if(f.is_open())
+    {
+        f << "Hello, files!";
+    }*/
+
 
     return 0;
 }
