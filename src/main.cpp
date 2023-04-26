@@ -1,12 +1,15 @@
 #include <iostream>
 #include <string>
 
+#include <cassert>
+
 #include "includes/utils.hpp"
 
 // tutorial (in french) : https://www.youtube.com/playlist?list=PLrSOXFDHBtfFKOzlm5iCBeXDTLxXdmxpx
 
 //
 // compilation with many files : g++ -std=c++20 -Wall -Wextra *.cpp -o exec_name
+// add -DNDEBUG for ignore asserts for the compilation
 //
 
 
@@ -18,6 +21,14 @@
 int sum(int a, int b)
 {
     return a + b;
+}*/
+
+/*
+void createPlayer(std::string username, int level)
+{
+    assert(level > 0 && "The starting level can not be under 0.");
+
+    std::cout << "Player created : " << username << " / lvl: " << level << std::endl;
 }*/
 
 int main()
@@ -146,8 +157,27 @@ int main()
 
     std::cout << n << std::endl;*/
 
-    helloWorld();  // from utils.cpp
+    /*helloWorld();  // from utils.cpp
+    */
 
+    //assertion
+    /*createPlayer("Welpike", 20);  // works
+    createPlayer("Welpike", -20); // don't works
+    */
+
+    //exceptions
+
+    try{
+        throw std::invalid_argument("Raise Error");
+    }
+    catch(const std::invalid_argument& err)  //generic exception catcher before generics
+    {
+        std::cout << err.what() << std::endl;
+    }
+    catch(const std::exception& err)
+    {
+        std::cout << "An error occured." << std::endl;
+    }
 
     return 0;
 }
