@@ -3,6 +3,17 @@
 
 // tutorial (in french) : https://www.youtube.com/playlist?list=PLrSOXFDHBtfFKOzlm5iCBeXDTLxXdmxpx
 
+
+/*void sayHello(std::string name)
+{
+    std::cout << "Hello, " << name << std::endl;
+}
+
+int sum(int a, int b)
+{
+    return a + b;
+}*/
+
 int main()
 {
     //std::cout << "Hello, world!" << std::endl;
@@ -82,12 +93,52 @@ int main()
             std::cout << "Unknown code" << std::endl;
     }*/
 
-    std::string sentence = "Hello, world! how are you?";
+    /*std::string sentence = "Hello, world! how are you?";
 
     for(const auto i : sentence)  // for each i from sentence
     {
         std::cout << i << "\n";
-    }
+    }*/
+
+
+    /*sayHello("World");
+
+    std::cout << sum(2, 3) << std::endl;*/
+
+    //
+    // important reference != pointer
+    //
+
+    // lambda
+    // []() <specificators> -> <return_type> {};
+    //
+
+    /*auto function = []() -> void 
+    { 
+        std::cout << "Hello, lambas!" << std::endl; 
+    };
+    function();
+
+    int n{42};
+
+    std::cout << n << std::endl;*/
+    
+    /*
+        var  -> passing by copy
+        &var -> passing by reference
+
+        =    -> passing all vars by copy
+        &    -> passing all vars by reference
+    */
+    
+    /*auto function2 = [&]() mutable -> void
+    {
+        n = 43;
+    };
+
+    function2();
+
+    std::cout << n << std::endl;*/
 
 
     return 0;
