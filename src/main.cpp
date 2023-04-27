@@ -8,6 +8,8 @@
 
 #include "includes/namespacetest.hpp"
 
+#include "includes/point.hpp"
+
 // tutorial (in french) : https://www.youtube.com/playlist?list=PLrSOXFDHBtfFKOzlm5iCBeXDTLxXdmxpx
 
 //
@@ -239,13 +241,24 @@ int main()
 
     /*using Product = struct Product;  // aliasing
 
-    /* struct */// Product p{"Computer", 499.99, true};
+    / struct / Product p{"Computer", 499.99, true};
 
-    /* std::cout << "Prix : " << p.price << std::endl;
+    std::cout << "Prix : " << p.price << std::endl;
 
     p.price++;
 
     std::cout << "Prix : " << p.price << std::endl;*/
+
+    /*
+    struct : public datas (by default)
+    class : private datas (by default)
+
+    access level : public / private / protect
+    */
+
+    /*Point p{};
+
+    Point p2{p};*/
 
     return 0;
 }
