@@ -41,7 +41,7 @@ void createPlayer(std::string username, int level)
 //     fire,   // 2
 //     water   // 3
 // };
-
+//
 // enum class NaturalElementClass
 // {
 //     earth,  // 0
@@ -49,8 +49,14 @@ void createPlayer(std::string username, int level)
 //     fire,   // 2
 //     water   // 3
 // };
+// enum class smallint : int {};
 
-enum class smallint : int {};
+/*struct Product
+{
+    std::string name;
+    float price;
+    bool available;
+};*/
 
 int main()
 {
@@ -230,6 +236,16 @@ int main()
     }*/
 
     //Namespacetest::test();
+
+    /*using Product = struct Product;  // aliasing
+
+    /* struct */// Product p{"Computer", 499.99, true};
+
+    /* std::cout << "Prix : " << p.price << std::endl;
+
+    p.price++;
+
+    std::cout << "Prix : " << p.price << std::endl;*/
 
     return 0;
 }
