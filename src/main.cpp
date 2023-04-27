@@ -6,6 +6,8 @@
 
 #include "includes/utils.hpp"
 
+#include "includes/namespacetest.hpp"
+
 // tutorial (in french) : https://www.youtube.com/playlist?list=PLrSOXFDHBtfFKOzlm5iCBeXDTLxXdmxpx
 
 //
@@ -227,6 +229,7 @@ int main()
         f << "Hello, files!";
     }*/
 
+    //Namespacetest::test();
 
     return 0;
 }
