@@ -6,7 +6,7 @@
     {
         public:
             Point();  // constructor
-            Point(const Point& p);  // copy constructor
+            //Point(const Point& p);  // copy constructor
             ~Point();  // destructor
             //.........
         private:

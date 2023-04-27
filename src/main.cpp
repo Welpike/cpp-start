@@ -10,6 +10,8 @@
 
 #include "includes/point.hpp"
 
+#include "includes/window.hpp"
+
 // tutorial (in french) : https://www.youtube.com/playlist?list=PLrSOXFDHBtfFKOzlm5iCBeXDTLxXdmxpx
 
 //
@@ -259,6 +261,14 @@ int main()
     /*Point p{};
 
     Point p2{p};*/
+
+    Window app{"App", 480, 640};
+
+    std::cout << app.getTitle() << std::endl;
+    app.setTitle("App window");
+    std::cout << app.getTitle() << std::endl;
+
+    app.run();
 
     return 0;
 }
