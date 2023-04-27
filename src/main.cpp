@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 //#include <fstream>
-
 //#include <cassert>
 
 #include "includes/utils.hpp"
@@ -11,6 +10,10 @@
 #include "includes/point.hpp"
 
 #include "includes/window.hpp"
+
+#include "includes/unit.hpp"
+#include "includes/character.hpp"
+#include "includes/quest.hpp"
 
 // tutorial (in french) : https://www.youtube.com/playlist?list=PLrSOXFDHBtfFKOzlm5iCBeXDTLxXdmxpx
 
@@ -262,13 +265,20 @@ int main()
 
     Point p2{p};*/
 
-    Window app{"App", 480, 640};
+    /*Window app{"App", 480, 640};
 
     std::cout << app.getTitle() << std::endl;
     app.setTitle("App window");
     std::cout << app.getTitle() << std::endl;
 
-    app.run();
+    app.run();*/
+
+    Unit npc{114, "Rick"};
+    Character c{12, "Astley", 1};
+
+    Quest quest{"some quest", "you have to do...", npc.getId()};
+
+    quest.show();
 
     return 0;
 }
